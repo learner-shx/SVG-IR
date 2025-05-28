@@ -1,6 +1,6 @@
 # SVG-IR: Spatially-Varying Gaussian Splatting for Inverse Rendering (CVPR 2025)
 
-### <p align="center">[🌐Project Page](https://learner-shx.github.io/project_pages/SVG-IR/index) | [🖨️ArXiv](https://arxiv.org/abs/2504.06815) | [📰Paper](https://arxiv.org/pdf/2504.068153)</p>
+### <p align="center">[🌐Project Page](https://learner-shx.github.io/project_pages/SVG-IR/index) | [🖨️ArXiv](https://arxiv.org/abs/2504.06815) | [📰Paper](https://arxiv.org/pdf/2504.06815)</p>
 
 
 <p align="center">
