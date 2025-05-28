@@ -10,7 +10,7 @@ Hanxiao Sun<sup>1</sup>, Yupeng Gao<sup>2</sup>, Jin Xie<sup>2</sup>, Jian Yang<
 
 This is official implement of Relightable 2D Gaussian for the paper.
 
-*SVG-IR: Spatially-Varying Gaussian Splatting for Inverse Renderin*.
+*SVG-IR: Spatially-Varying Gaussian Splatting for Inverse Rendering*.
 ![Alt text](https://learner-shx.github.io/project_pages/SVG-IR/static/images/teaser.png)
 
 
