@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+*egg-info
+.idea
+.vscode
+.DS_Store
+output
+build
+datasets
+log
+point
+nvdiffrast
+pbgi/bvhworkers/.slangtorch_cache/*

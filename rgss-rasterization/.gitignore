@@ -1,0 +1,4 @@
+build/
+rgss_rasterization.egg-info/
+svgss_rasterization.egg-info/
+dist/
