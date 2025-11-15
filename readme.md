@@ -17,7 +17,7 @@ This is official implement of Relightable 2D Gaussian for the paper.
 ### Installation
 #### Clone this repo
 ```shell
-git clone https://github.com/learner-shx/SVG-IR.git
+git clone https://github.com/learner-shx/SVG-IR.git --recursive
 ```
 #### Install dependencies
 ```shell
@@ -46,6 +46,12 @@ pip install slangtorch==1.2.1
 We recommend that users compile the extension with CUDA 11.8 to avoid the potential problems mentioned in [3D Guassian Splatting](https://github.com/graphdeco-inria/gaussian-splatting).
 
 ```shell
+# install custome-knn
+pip install ./custome-knn
+
+# install bvh
+pip install ./bvh
+
 # install knn-cuda
 pip install ./submodules/simple-knn
 
@@ -68,9 +74,6 @@ Relightable3DGaussian
     |   ├── armadillo
     |   ├── ...
 ```
-
-#### Ground Points for composition
-For multi-object composition, we manually generate a ground plane with relightable 3D Gaussian representation, which can be downloaded [here](https://box.nju.edu.cn/f/c51d9de245f04d0fb872/?dl=1). We put the *ground.ply* in the folder *./point*.
 
 ### Running
 We run the code in a single NVIDIA GeForce RTX 3090 GPU (24G). To reproduce the results in the paper, please run the following code.
