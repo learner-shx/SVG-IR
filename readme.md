@@ -46,11 +46,11 @@ pip install slangtorch==1.2.1
 We recommend that users compile the extension with CUDA 11.8 to avoid the potential problems mentioned in [3D Guassian Splatting](https://github.com/graphdeco-inria/gaussian-splatting).
 
 ```shell
-# install custome-knn
-pip install ./custome-knn
+# install custom-knn
+pip install ./submodules/custom-knn
 
 # install bvh
-pip install ./bvh
+pip install ./submodules/bvh
 
 # install knn-cuda
 pip install ./submodules/simple-knn
