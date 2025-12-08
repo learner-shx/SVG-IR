@@ -11,3 +11,4 @@ log
 point
 nvdiffrast
 pbgi/bvhworkers/.slangtorch_cache/*
+*.lock
