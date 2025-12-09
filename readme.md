@@ -97,6 +97,19 @@ python eval_nvs.py --eval \
     -c output/TensoIR/${i}/render_relight/chkpnt50000.pth \
     -t render_relight
 ```
+
+Before Relighting, you need to collect HDR image first. You can download them from open source website, for example `polyhaven.com`. And then, modify the env map path in `eval_relighting_tensoIR.py`.
+```py
+# e.g. we have a HDR image located in `{ROOT_DIRECTORY}/env_map/bridge.hdr`
+# modify the env map path in `eval_relighting_tensoIR.py`
+task_dict = {
+    "bridge": {
+        "capture_list": ["pbr",  "base_color", "lights", "local_lights", "direct",  "visibility"],
+        "envmap_path": "{ROOT_DIRECTORY}/env_map/bridge.hdr",   # modify this line
+    },
+}
+```
+
 Run the following command to evaluate Relighting (for Synthetic4Relight only):
 ```
 # e.g.
