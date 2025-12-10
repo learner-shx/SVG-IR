@@ -14,7 +14,7 @@ from simple_knn._C import distCUDA2
 from custom_knn._C import topKdistCUDA2
 from arguments import OptimizationParams
 from tqdm import tqdm
-from bvh import RayTracer
+from submodules.bvh import RayTracer
 from utils.graphics_utils import fibonacci_sphere_sampling
 from utils.loss_utils import ssim, bilateral_smooth_loss, second_order_edge_aware_loss, tv_loss, first_order_edge_aware_loss, first_order_loss, first_order_edge_aware_norm_loss
 
