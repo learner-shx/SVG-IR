@@ -11,7 +11,7 @@ from utils.sh_utils import RGB2SH, eval_sh
 from utils.system_utils import mkdir_p
 from plyfile import PlyData, PlyElement
 from simple_knn._C import distCUDA2
-from custom_knn._C import topKdistCUDA2
+# from custom_knn._C import topKdistCUDA2
 from arguments import OptimizationParams
 from tqdm import tqdm
 from submodules.bvh import RayTracer
@@ -574,22 +574,22 @@ class GaussianModel:
         
         return loss
     
-    def get_knn_loss(self):
-        points = self.get_xyz
-        dist2d, idx = topKdistCUDA2(points)
-        dist2d  = dist2d.reshape(-1, 8)
-        idx = idx.reshape(-1, 8)
+    # def get_knn_loss(self):
+    #     points = self.get_xyz
+    #     dist2d, idx = topKdistCUDA2(points)
+    #     dist2d  = dist2d.reshape(-1, 8)
+    #     idx = idx.reshape(-1, 8)
 
-        knn_albedo = self.get_albedo[idx.long()]
-        knn_roughness = self.get_roughness[idx.long()]
+    #     knn_albedo = self.get_albedo[idx.long()]
+    #     knn_roughness = self.get_roughness[idx.long()]
 
-        knn_albedo_var = torch.var(knn_albedo, dim=1)
-        knn_roughness_var = torch.var(knn_roughness, dim=1)
+    #     knn_albedo_var = torch.var(knn_albedo, dim=1)
+    #     knn_roughness_var = torch.var(knn_roughness, dim=1)
 
-        knn_albedo_loss = knn_albedo_var.mean()
-        knn_roughness_loss = knn_roughness_var.mean()
+    #     knn_albedo_loss = knn_albedo_var.mean()
+    #     knn_roughness_loss = knn_roughness_var.mean()
 
-        return knn_albedo_loss, knn_roughness_loss
+    #     return knn_albedo_loss, knn_roughness_loss
 
 
     def update_radiance_with_calc(self, ratio=1.0):
